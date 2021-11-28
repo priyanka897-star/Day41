@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <style>
+        .headerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: tomato;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        .mainContainer {
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+            height: 600px;
+        }
+
+        .mainContentItem {
+            text-align: left;
+            background: deepskyblue;
+        }
+
+        article {
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+
+        .sideBarLeftItem {
+            background: gold;
+        }
+
+        .sideBarRightItem {
+            background: hotpink;
+        }
+
+        .sideBarItem {
+            flex: 1 0 0;
+            border: 0px solid green
+        }
+
+        .mainContentItem {
+            flex: 3 0px;
+        }
+
+        .sideBarLeftItem {
+            order: 1;
+        }
+
+        .mainContentItem {
+            order: 2;
+        }
+
+        .sideBarRightItem {
+            order: 3;
+        }
+
+        .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightblue;
+            font-weight: bold;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="headerContainer">
+        <center>
+            <h1>Sample Flexbox Example</h1>
+        </center>
+    </header>
+    <div class="mainContainer">
+        <section class="mainContentItem">
+            <article>
+                <h2>First Article</h2>
+                <p> In which the hacker tourist ventures forth across the wide and wondrous meatspace of three
+                    continents. An account of the laying of the longest wire on Earth.</p>
+            </article>
+            <article>
+                <h2>Second Article</h2>
+                <p>For seven decades explorers have been swallowed by the Mato Grosso region, the "green hell", trying
+                    to uncover a lost civilization hidden in the Amazon, the City of Z.</p>
+            </article>
+            <article>
+                <p>
+                <h2>Third Article</h2>
+                </p>
+                <p>Six weeks, I told my wife. All the way to heaven and then home. Perhaps I would fail in some, or
+                    every, way. But one must go oneself to know the truth.</p>
+            </article>
+        </section>
+        <sidebar class="sideBarItem sideBarLeftItem">Left Side Bar</sidebar>
+        <sidebar class="sideBarItem sideBarRightItem"> Right Side Bar</sidebar>
+    </div>
+    <footer class="footerContainer">Footer</footer>
+
+</body>
+
+</html>
